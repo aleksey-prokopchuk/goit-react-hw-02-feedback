@@ -8,7 +8,7 @@ const Button = props => {
           className={[css.btn, css[key]].join(' ')}
           type="button"
           key={key}
-          onClick={() => handleAddVote({ key })}
+          onClick={() => handleAddVote(`${key}`)}
         >
           {key}
         </button>
