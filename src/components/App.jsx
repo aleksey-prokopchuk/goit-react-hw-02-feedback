@@ -1,5 +1,13 @@
-import Feedback from './Feedback/Feedback';
+import Section from './Section/Section';
 
 export const App = () => {
-  return <Feedback />;
+  return (
+    <div
+      style={{
+        padding: 20,
+      }}
+    >
+      <Section title="Please leave feedback" />
+    </div>
+  );
 };

@@ -1,0 +1,24 @@
+.wraper_btn {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.btn {
+  padding: 5px;
+
+  text-transform: capitalize;
+
+  cursor: pointer;
+
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.btn:not(:last-child) {
+  margin-right: 10px;
+}
+
+.btn:active {
+  background-color: rgb(172, 172, 172);
+}
