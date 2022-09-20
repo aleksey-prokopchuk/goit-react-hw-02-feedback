@@ -21,21 +21,17 @@ class Feedback extends Component {
     });
   };
 
-  // Загальна кількість голосів
   countTotalFeedback() {
     return Object.values(this.state).reduce((acc, value) => {
       return acc + value;
     }, 0);
   }
 
-  // Відсоток позитивних голосів
   countPositiveFeedbackPercentage() {
     return Math.round((this.state.good / this.countTotalFeedback()) * 100);
   }
 
   render() {
-    // const { good, neutral, bad } = this.state;
-
     return (
       <section>
         <h1>{this.title}</h1>
